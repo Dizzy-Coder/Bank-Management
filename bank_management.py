@@ -198,7 +198,13 @@ while True:
     if choice == 1:
         user_dash()
     elif choice == 2:
-        admin_dash()
+        username = input("Enter Username: ")
+        password = input("Enter password: ")
+        if (username == "admin" and password == "123"):
+            admin_dash()
+        else:
+            print("Wrong username or password.")
+            break
     elif choice == 3:
         break
     else:
